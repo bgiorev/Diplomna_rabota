@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:id="@+id/layout_main"
+    >
+
+    <ViewFlipper android:id="@+id/views"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">  
+   
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff">
+            
+            <TextView
+                android:id="@+id/bodyTemperatureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal = "true"
+                android:textSize="50sp"
+                android:text="@string/body_temperature"
+                />            
+                       
+            <ImageView
+                android:id="@+id/bodyTemperatureImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bodyTemperatureText"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/temperature"
+                />
+            
+            <TextView
+                android:id="@+id/bodyTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bodyTemperatureText"
+                android:layout_toRightOf="@id/bodyTemperatureImage"
+                android:textSize="80sp"
+                android:text="36.5"
+                />
+            
+            <TextView
+                android:id="@+id/bodyTemperatureUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bodyTemperatureText"
+                android:layout_toRightOf="@id/bodyTemperature"
+                android:layout_marginLeft="10dp"
+                android:textSize="70sp"
+                android:text="@string/bodyTemperatureUnit"
+                />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+               android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff">
+		
+        <TextView
+            android:id="@+id/bloodPressureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:text="@string/blood_pressure"
+            />
+            
+        <ImageView
+            android:id="@+id/bloodPressureImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodPressureText"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bloodpressure128x128"
+            />
+        
+        <TextView
+            android:id="@+id/bloodPressureTopBorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodPressureText"
+            android:layout_toRightOf="@id/bloodPressureImageView"
+            android:layout_marginLeft="30dp"
+            android:textSize="75sp"
+            android:text="125"
+            />
+        
+        <TextView
+            android:id="@+id/bloodPressureBottomBorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodPressureTopBorder"
+            android:layout_toRightOf="@id/bloodPressureImageView"
+            android:layout_marginLeft="30dp"
+            android:textSize="75sp"
+            android:text="85"
+            />
+        
+        <Button
+            android:id="@+id/measureBloodPressureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodPressureText"
+            android:layout_toRightOf="@id/bloodPressureTopBorder"
+            android:textSize="30sp"
+            android:text="@string/measure_blood_pressure"
+            />
+        
+        	            
+        </RelativeLayout> 
+        
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/heartRateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:text="@string/heart_rate"
+            />   
+            
+        <ImageView 
+            android:id="@+id/heartImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/heartRateText"
+            android:src="@drawable/red_heart"
+            android:contentDescription="@string/heart_rate"
+            />
+
+        <TextView
+            android:id="@+id/heartRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/heartImageView"
+            android:layout_below="@id/heartRateText"
+            android:layout_marginLeft="30dp"
+            android:text="60"
+            android:textSize="75sp" />
+        
+        <TextView 
+            android:id="@+id/bpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heartRateText"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/heartRate"
+            android:text="@string/bpm"
+            android:textSize="25sp"
+            />
+        
+        </RelativeLayout> 
+        
+            <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff">
+            
+			<TextView
+			    android:id="@+id/bloodSaturationText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:textSize="50sp"
+			    android:text="@string/blood_satoration"
+			    />
+			
+			<ImageView 
+			    android:id="@+id/bloodSaturationImage"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/bloodSaturationText"
+			    android:layout_marginLeft="10dp"
+			    android:src="@drawable/saturation"
+			    />
+            
+			<TextView 
+			    android:id="@+id/bloodSaturation"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/bloodSaturationText"
+			    android:layout_toRightOf="@id/bloodSaturationImage"
+			    android:textSize="80sp"
+			    android:text="99"
+			    android:layout_marginLeft="30dp"
+			    />
+			
+			<TextView 
+			    android:id="@+id/bloodSaturationUnit"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/bloodSaturationText"
+			    android:layout_toRightOf="@id/bloodSaturation"
+			    android:layout_marginLeft="30dp"
+			    android:textSize="80sp"
+			    android:text="%"
+			    />
+			
+        </RelativeLayout>
+        
+    </ViewFlipper>        
+
+</LinearLayout>

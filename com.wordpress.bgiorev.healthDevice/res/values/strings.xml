@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartHealth Monitor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="bpm">BPM</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="measure_blood_pressure">Measure blood pressure</string>
+    <string name="body_temperature">Body Temperature</string>
+	<string name="bodyTemperatureUnit">\u2103</string>
+	<string name="blood_satoration">Blood Satoration</string>
+</resources>
